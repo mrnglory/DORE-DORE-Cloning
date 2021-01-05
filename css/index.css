@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@media screen and (max-width:767px) {
+	.submenu1{
+		visibility:hidden;
+		display:none;
+	}
+	.submenu2{
+		display:none;
+	}
+	.nav .logo{
+		float:right;
+		padding:32px 20px 0 0;
+	}
+	.menu-icon{
+		display: block;
+		float:right;
+		padding-left:20px;
+		top:10px;
+		position:absolute;
+	}
+	.context{
+		width:90%;
+		font-size:1.3em;
+		color:black;
+		line-height:40px;
+	}
+	.conslogan{
+		text-align:center;
+		color:black;
+		margin:40px 40px 0 40px;
+		font-size:13px;
+	}
+	.conlogo{
+		display:none;	
+	}
+	.nav ul{
+		float:left;
+		top:70px;
+		position:absolute;
+		height:160px;
+		list-style:none;
+		font-size:12px;
+		margin-right:10px;
+		background:rgba(255,255,255,0.8);
+	}
+	.nav ul li{
+		display:block;
+		margin-right:30px;
+		height:30px;
+	}
+	.nav ul a{
+		text-decoration:none;
+		color:black;
+	}
+	.nav ul a:hover{
+		color:#666;
+	}
+	.nav ul ul{
+		background:rgba(246,195,174,0.6);
+		color:black;
+		display:none;
+		position:absolute;
+		top:40px;
+		width:200px;
+		padding:10px;
+		line-height:37px;
+		left:95px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:959px){
+	.menu-icon{visibility:hidden; display:none;}
+	.submenu2{visibility:hidden; display:none;}
+	.context{
+		width:80%;
+		font-size:1.1em;
+		color:black;
+		line-height:40px;
+	}
+	.conslogan{
+		text-align:center;
+		color:black;
+		margin:40px 40px 0 40px;
+		font-size:13px;
+		font-weight:bold;
+	}
+	.conlogo{
+		width:130px;
+		margin-top:90px;	
+	}
+	.nav ul{
+		float:right;
+		list-style:none;
+		font-size:12px;
+		margin-right:10px;
+	}
+	.nav ul li{
+		display:inline-block;
+		margin-right:20px;
+		
+	}
+	.nav ul a{
+		text-decoration:none;
+		color:black;
+	}
+	.nav ul a:hover{
+		color:#666;
+	}
+	.nav ul ul{
+		background:rgba(246,195,174,0.6);
+		color:black;
+		display:none;
+		position:absolute;
+		top:70px;
+		width:200px;
+		padding:10px;
+		line-height:37px;
+	}
+}
+
+@media screen and (min-width:960px) {
+	.menu-icon{visibility:hidden; display: none;}
+	.submenu2{visibility:hidden; display:none;}
+	.context{
+		width:40%;
+		font-size:13px;
+		color:#999;
+		line-height:35px;
+	}
+	.conslogan{
+		text-align:center;
+		color:#999;
+		margin:40px 40px 0 40px;
+		font-size:13px;
+	}
+	.conlogo{
+		width:150px;
+		margin-top:90px;	
+	}
+	.nav ul{
+		float:right;
+		list-style:none;
+		font-size:12px;
+		margin-right:10px;
+	}
+	.nav ul li{
+		display:inline-block;
+		margin-right:30px;
+		
+	}
+	.nav ul a{
+		text-decoration:none;
+		color:#666;
+	}
+	.nav ul a:hover{
+		color:black;
+	}
+	.nav ul ul{
+		background:rgba(246,195,174,0.6);
+		color:black;
+		display:none;
+		position:absolute;
+		top:70px;
+		width:200px;
+		padding:10px;
+		line-height:37px;
+	}
+}
+
+img{
+	width:100%;
+}
+*{
+	margin:0 auto;
+	font-family:'Quicksand', sans-serif;
+}
+::selection{
+	background:rgba(246,195,174,0.6);
+	color:#666;
+}
+.nav .logo{
+	padding-left:40px;
+	width:220px;
+	vertical-align:middle;
+}
+.page3 div, .page4 div{
+	display:inline-block;
+}
+.page3 img:hover{
+	cursor:pointer;
+}
+.page3{
+	height:320px;
+	padding-top:250px;
+	text-align:center;	
+}
+.page4 div{
+	margin:50px;
+	margin-top:0;
+}
+.nav{
+	height:70px;
+	line-height:70px;
+	border-bottom:1px solid #dfdfdf;
+	position:fixed;
+	width:100%;
+	z-index:999;
+	background-color:white;
+	letter-spacing:2px;
+}
+.imgwrap{
+	width:80%;
+}
+.imgwrap .conimg{
+	width:30%;
+}
+
+
+
+/*****************menu******************/
+
+
+.nav ul li:hover ul{
+	display:block;
+}
+
+.nav ul ul li{
+	width:100%;
+}
+
+.nav ul ul li a:hover{
+	display:block;
+	background:rgba(255,255,255,0.5);
+}
